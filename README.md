@@ -26,7 +26,7 @@ Translation file is a flat json key map
 #### Setup the reducer
 ```js
 import {myReducer} from "./myReducer"
-import {reducer as ri18n} from "ri18n"
+import {reducer as ri18n} from "@mbossan/ri18n"
 
 
 const appReducer = combineReducers({
@@ -51,7 +51,7 @@ const appReducer = combineReducers({
 #### Load your translations
 With Saga :
 ```js
-import {actions as ri18nActions} from "ri18n"
+import {actions as ri18nActions} from "@mbossan/ri18n"
 
 //do loading process...
 
@@ -74,7 +74,7 @@ selectors :
 
 #### Decorate your view components with the localize HOC
 ```js
-import {localize} from "ri18n"
+import {localize} from "@mbossan/ri18n"
 
 @localize()
 export default class MyComponent extends PureComponent{
@@ -83,7 +83,7 @@ export default class MyComponent extends PureComponent{
 ```
 or
 ```js
-import {localize} from "ri18n"
+import {localize} from "@mbossan/ri18n"
 
 class MyComponent extends PureComponent{
   
@@ -95,7 +95,7 @@ export default localize()(MyComponent)
 #### Translate using the t function
 ```jsx harmony
 
-import {localize} from "ri18n"
+import {localize} from "@mbossan/ri18n"
 
 @localize()
 export default class MyComponent extends PureComponent{

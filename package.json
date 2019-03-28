@@ -1,6 +1,6 @@
 {
   "name": "@mbossan/ri18n",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "i18n for React Redux made simple",
   "main": "index.js",
   "scripts": {
