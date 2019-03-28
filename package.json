@@ -1,0 +1,32 @@
+{
+  "name": "ri18n",
+  "version": "0.1.0",
+  "description": "i18n for React Redux made simple",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbossan/ri18n.git"
+  },
+  "keywords": [
+    "NPM",
+    "mbossan"
+  ],
+  "author": "mbossan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbossan/ri18n/issues"
+  },
+  "homepage": "https://github.com/mbossan/ri18n#readme",
+  "dependencies": {
+    "react": "^16.6.1",
+    "redux": "^4.0.1",
+    "redux-act": "^1.7.4",
+    "seamless-immutable": "^7.1.4",
+    "hoist-non-react-statics": "^3.3.0"
+  },
+  "devDependencies": {
+    "yarn": "^1.12.3"
+  }
+}
