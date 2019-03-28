@@ -4,11 +4,11 @@
 
 - npm
 ```bash
-$ npm i ri18n --save
+$ npm i @mbossan/ri18n --save
 ```
 - yarn
 ```bash
-$ yarn add ri18n
+$ yarn add @mbossan/ri18n
 ```
 
 ## usage
