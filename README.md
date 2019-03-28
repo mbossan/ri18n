@@ -1,14 +1,14 @@
-# Ri18n : i18n for React Redux made simple
+# Rxi18n : i18n for React Redux made simple
 
 ## install
 
 - npm
 ```bash
-$ npm i @mbossan/ri18n --save
+$ npm i rxi18n --save
 ```
 - yarn
 ```bash
-$ yarn add @mbossan/ri18n
+$ yarn add rxi18n
 ```
 
 ## usage
@@ -26,12 +26,12 @@ Translation file is a flat json key map
 #### Setup the reducer
 ```js
 import {myReducer} from "./myReducer"
-import {reducer as ri18n} from "@mbossan/ri18n"
+import {reducer as rxi18n} from "rxi18n"
 
 
 const appReducer = combineReducers({
   myReducer,
-  ri18n
+  rxi18n
 })
 ```
 With custom reducer name
@@ -51,7 +51,7 @@ const appReducer = combineReducers({
 #### Load your translations
 With Saga :
 ```js
-import {actions as ri18nActions} from "@mbossan/ri18n"
+import {actions as ri18nActions} from "rxi18n"
 
 //do loading process...
 
@@ -74,7 +74,7 @@ selectors :
 
 #### Decorate your view components with the localize HOC
 ```js
-import {localize} from "@mbossan/ri18n"
+import {localize} from "rxi18n"
 
 @localize()
 export default class MyComponent extends PureComponent{
@@ -83,7 +83,7 @@ export default class MyComponent extends PureComponent{
 ```
 or
 ```js
-import {localize} from "@mbossan/ri18n"
+import {localize} from "rxi18n"
 
 class MyComponent extends PureComponent{
   
@@ -95,7 +95,7 @@ export default localize()(MyComponent)
 #### Translate using the t function
 ```jsx harmony
 
-import {localize} from "@mbossan/ri18n"
+import {localize} from "rxi18n"
 
 @localize()
 export default class MyComponent extends PureComponent{

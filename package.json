@@ -1,13 +1,13 @@
 {
-  "name": "@mbossan/ri18n",
-  "version": "0.1.2",
+  "name": "rxi18n",
+  "version": "0.1.0",
   "description": "i18n for React Redux made simple",
   "main": "index.js",
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbossan/ri18n.git"
+    "url": "git+https://github.com/mbossan/rxi18n.git"
   },
   "keywords": [
     "NPM",
@@ -16,9 +16,9 @@
   "author": "mbossan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mbossan/ri18n/issues"
+    "url": "https://github.com/mbossan/rxi18n/issues"
   },
-  "homepage": "https://github.com/mbossan/ri18n#readme",
+  "homepage": "https://github.com/mbossan/rxi18n#readme",
   "dependencies": {
     "react": "^16.6.1",
     "redux": "^4.0.1",

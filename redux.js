@@ -2,7 +2,7 @@ import { createAction, createReducer } from "redux-act";
 import Immutable from "seamless-immutable";
 import pluralize from './pluralize'
 
-let reducerName = "ri18n"
+let reducerName = "rxi18n"
 
 export function setReducerName(name) {
   reducerName = name
