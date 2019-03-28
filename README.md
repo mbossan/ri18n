@@ -37,7 +37,7 @@ const appReducer = combineReducers({
 With custom reducer name
 ```js
 import {myReducer} from "./myReducer"
-import {reducer as myI18nReducer, setReducerName} from "ri18n"
+import {reducer as myI18nReducer, setReducerName} from "rxi18n"
 setReducerName('myI18nReducer')
 
 const appReducer = combineReducers({
@@ -51,14 +51,14 @@ const appReducer = combineReducers({
 #### Load your translations
 With Saga :
 ```js
-import {actions as ri18nActions} from "rxi18n"
+import {actions as rxi18nActions} from "rxi18n"
 
 //do loading process...
 
-//then add 'en' translations to the ri18n state
-yield put(ri18nActions.addTranslations('en', translations))
+//then add 'en' translations to the rxi18n state
+yield put(rxi18nActions.addTranslations('en', translations))
 //switch lang to 'en' 
-yield put(ri18nActions.setLang('en'))
+yield put(rxi18nActions.setLang('en'))
 ```
 
 #### API : 
