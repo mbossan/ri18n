@@ -1,6 +1,6 @@
 {
   "name": "rxi18n",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "i18n for React Redux made simple",
   "main": "./dist/index.js",
   "scripts": {
