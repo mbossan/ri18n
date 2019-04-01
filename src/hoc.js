@@ -27,14 +27,19 @@ export default () => (WrappedComponent) => {
     }
 
     componentDidMount() {
+      this.mounted = true
       this.unsubscribe = this.context.store.subscribe(this.listener)
     }
 
     componentWillUnmount() {
-      this.unsubscribe();
+      this.mounted = false
+      if (this.unsubscribe)
+        this.unsubscribe();
     }
 
     listener = () => {
+      if (!this.mounted)
+        return
       const store = this.context.store.getState();
       this.setState({
         lang: i18nSelectors.lang(store),
