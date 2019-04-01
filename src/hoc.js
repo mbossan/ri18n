@@ -41,10 +41,11 @@ export default () => (WrappedComponent) => {
       if (!this.mounted)
         return
       const store = this.context.store.getState();
-      this.setState({
-        lang: i18nSelectors.lang(store),
-        t: (key, replacements, number) => i18nSelectors.t(store, { key, replacements, number })
-      })
+      if (this.state.lang !== i18nSelectors.lang(store))
+        this.setState({
+          lang: i18nSelectors.lang(store),
+          t: (key, replacements, number) => i18nSelectors.t(store, { key, replacements, number })
+        })
     }
 
     render() {
